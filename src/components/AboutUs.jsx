@@ -1,8 +1,11 @@
 import React from 'react'
+import CommonHeader from './CommonHeader'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div className='about-us'>
+      <CommonHeader title='About Us' location='About Us' />
+    </div>
   )
 }
 

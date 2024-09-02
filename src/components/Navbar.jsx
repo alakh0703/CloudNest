@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../assets/images/Logo2.png'
 import "./styles/Navbar.css";
 
 const Navbar = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div className='navbar-main' >
+    <div className={`navbar-main ${isVisible ? 'navbar-visible' : 'navbar-hidden'}`}>
       <div className='navbar-container'>
 
       <div className='navbar-logo-container'>
@@ -12,28 +29,29 @@ const Navbar = () => {
         </div>
         <div className='navbar-links'>
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>Home</a>
+          <p className='navbar-link'>Home</p>
 
           </div>
      
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>Opportunities</a>
+          <p className='navbar-link'>Opportunities <span className='navbar-gt'>&gt;</span></p>
+
 
           </div>
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>About Us</a>
+          <p className='navbar-link'>About</p>
 
           </div>
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>Contact</a>
+          <p className='navbar-link'>Contact</p>
 
           </div>
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>Login</a>
+          <p className='navbar-link'>Login</p>
 
           </div>
           <div className='navbar-link'>
-              <a href='#' className='navbar-link'>Register</a>
+              <p className='navbar-link'>Register</p>
 
           </div>
           </div>

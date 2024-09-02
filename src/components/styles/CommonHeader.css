@@ -1,0 +1,33 @@
+.common-header-main {
+    height: 60vh;
+    background: url("../../assets/images//page-title-bg.png");
+    padding-left: 17%;
+    padding-right: 14%;
+    padding-bottom: 6%;
+}
+.common-header-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: transparent;
+}
+.common-header-main-homeicon {
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.common-header-main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.common-header-info-h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}

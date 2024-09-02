@@ -1,0 +1,77 @@
+.login-main {width:100%; padding-bottom: 100px;}
+
+.login-form-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    width: 40%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.login-label {
+    font-size: 1rem;
+    margin-bottom:5px;
+}
+.login-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.login-other-options {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.login-remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remember-me {
+    margin-left: 10px;
+}
+.login-forgot-password p {
+    cursor: pointer;
+}
+.login-button-div {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 145, 221);
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 50px;
+    /* semi-circuler ends */
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+.login-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(248, 252, 252);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    color: rgb(38, 145, 221);
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.login-button-div:hover {
+    background-color: black;
+}
+.login-button-div:hover .login-circle {
+    color: black;
+}
