@@ -1,61 +1,76 @@
-.login-main {width:100%; padding-bottom: 100px;}
+.login-main {
+    width: 100%;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
 
-.login-form-div{
+.login-form-div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
+
 .login-form {
-    width: 40%;
-    padding-top: 100px;
+    width: 90%;
+    max-width: 400px; /* Adjust the max width as needed */
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
+
 .login-label {
     font-size: 1rem;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
+
 .login-input {
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
     padding-left: 10px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
+
 .login-other-options {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .login-remember-me {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+
 .remember-me {
     margin-left: 10px;
 }
+
 .login-forgot-password p {
     cursor: pointer;
+    color: rgb(38, 145, 221); /* Add color to make it stand out */
 }
+
 .login-button-div {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(38, 145, 221);
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 0 20px; /* Adjust padding */
     height: 50px;
-    /* semi-circuler ends */
     border-radius: 25px;
     color: white;
     cursor: pointer;
     margin-top: 20px;
-
+    box-sizing: border-box;
 }
+
 .login-circle {
     width: 40px;
     height: 40px;
@@ -64,14 +79,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
     color: rgb(38, 145, 221);
     font-size: 2rem;
     margin-left: 10px;
 }
+
 .login-button-div:hover {
     background-color: black;
 }
+
 .login-button-div:hover .login-circle {
     color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .login-form {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .login-button-div {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .login-circle {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-input {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .login-label {
+        font-size: 0.9rem;
+    }
+
+    .login-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
 }

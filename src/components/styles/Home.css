@@ -4,22 +4,29 @@
     padding-left: 17%;
     padding-right: 14%;
     background: linear-gradient(90deg, #261797 0%, #67bef7 100%);
- 
 }
 
 .home-hero {
     width: 100%;
     display: flex;
+    
     padding-bottom: 100px;
 }
+
 .home-hero-text {
     width: 50%;
-    padding-top:30px;
-  
+    padding-top: 30px;
 }
+
 .home-hero-text-p {
-    font-size:3.5rem;
+    font-size: 3.5rem;
     color: white;
+    font-weight: 700;
+}
+
+.home-hero-text-p2 {
+    font-size: 3.5rem;
+    color: rgb(51, 185, 247);
     font-weight: 700;
 }
 
@@ -33,4 +40,471 @@
     left: 35%;
     background-color: #fffefe;
 }
+
+.rotating-text {
+    font-size: 3.5rem;
+    color: rgb(51, 185, 247);
+    font-weight: 700;
+}
+
+.cursor {
+    font-size: 3.5rem;
+    color: white;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.home-best-services {
+    /* background: url("../../assets/images/service_bg.png") no-repeat center center; */
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.home-best-services h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-best-services p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.best-service-cards {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.best-service-card {
+    background-color: transparent;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden; /* Ensures that the growing background doesn't overflow */
+    transition: transform 0.3s ease; /* Adds a subtle scaling effect */
+}
+
+.best-service-card:hover {
+    transform: translateY(-10px); /* Moves the card upwards on hover */
+}
+
+.best-service-card::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 0;
+}
+
+.best-service-card:hover::before {
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.best-service-card img {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.best-service-card p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.home-4f {
+    width: 100%;
+    background-color: rgb(221, 219, 219);
+    display: flex;
+    border-radius: 10px;
+}
+.home-4f-card {
+    width: 25%;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Ensures that the growing background doesn't overflow */
+    transition: transform 0.3s ease; /* Adds a subtle scaling effect */
+}
+.home-4f-card:hover {
+    transform: translateY(-10px); /* Moves the card upwards on hover */
+}
+.home-4f-card h3 {
+
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #19332a;
+}
+.home-4f-card p {
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.home-hero-text-lorem  {
+    color: white;
+    margin-top: 20px;
+    margin-left: 1px;
+    max-width: 80%;
+    font-size: 1.1rem;
+}
+.home-hero-text-affordable {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.home-hero-text-affordable::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px; /* Adjust height to control the curve of the arc */
+    bottom: -10px;
+    left: 0;
+    background-color: #f12828;
+    border-radius: 90% 0 90% 0; /* Creates the arc shape */
+}
+.home-hero-text-buttons{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.home-hero-text-button2{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+.home-hero-text-button1 {
+    background-color: white;
+    /* both ends semi circular */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+}
+.play-btn {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.7);
+    animation: pulse 1.5s infinite;
+    margin-right: 20px;
+}
+.home-hero-text-button2 p {
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid rgb(100, 100, 239);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(90deg) translateY(30%);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(185, 185, 205, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 255, 0);
+    }
+}
+
+
+.start-now {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 145, 221);
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 50px;
+    /* semi-circuler ends */
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+.start-now:hover {
+    background-color: black;
+}
+.start-now:hover .login-circle {
+    color: black;
+}
+.home-aboutus {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home-aboutus-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.home-aboutus-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-aboutus-right {
+    width: 50%;
+    padding: 30px;
+    padding-right: 80px;
+}
+.home-aboutus-right h3 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.home-aboutus-right p {
+        color: #000000;
+    margin-bottom: 20px;
+}
+
+.home-aboutus-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.home-aboutus-bottom-left {
+    width: 50%;
+    text-align: left    ;
+    padding-top: 100px;
+    padding-left: 50px;
+
+}
+.home-aboutus-bottom-left h3 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.home-aboutus-bottom-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media Queries for Additional Responsiveness */
+@media (max-width: 768px) {
+    .home_main {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .home-hero {
+        flex-direction: column;
+    }
+
+    .home-hero-text {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .home-hero-text-p, .home-hero-text-p2, .rotating-text, .cursor {
+        font-size: 2rem;
+    }
+
+    .home-hero-text-lorem {
+        font-size: 0.9rem;
+    }
+
+    .home-hero-text-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .best-service-cards {
+        grid-template-columns: repeat(1, 1fr); /* Stack cards in a single column */
+    }
+
+    .home-4f {
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+
+    .home-4f-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-hero-text-p, .home-hero-text-p2, .rotating-text, .cursor {
+        font-size: 1.5rem;
+    }
+
+    .home-hero-text-lorem {
+        font-size: 0.8rem;
+    }
+
+    .best-service-card img {
+        width: 80px;
+    }
+    .home-hero-image-div {
+        display: none;
+    }
+}
+/* Existing styles */
+
+/* Media Queries for Additional Responsiveness */
+@media (max-width: 768px) {
+    .home_main {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .home-hero {
+        flex-direction: column;
+    }
+
+    .home-hero-text {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 0; /* Ensure no extra padding on smaller screens */
+    }
+
+    .home-hero-text-p, .home-hero-text-p2, .rotating-text, .cursor {
+        font-size: 2rem;
+    }
+
+    .home-hero-text-lorem {
+        font-size: 0.9rem;
+    }
+
+    .home-hero-text-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .best-service-cards {
+        grid-template-columns: repeat(1, 1fr); /* Stack cards in a single column */
+    }
+
+    .home-4f {
+        flex-direction: column;
+        width: 100%; /* Adjust width to 100% */
+        margin-left: 0; /* Ensure no extra margin */
+    }
+
+    .home-4f-card {
+        width: 100%;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-hero-text-p, .home-hero-text-p2, .rotating-text, .cursor {
+        font-size: 1.5rem;
+    }
+.home-aboutus {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home-aboutus img {
+    margin-top: 20px;
+    width: 90%;
+}
+    .home-hero-text-lorem {
+        font-size: 0.8rem;
+    }
+
+    .best-service-card img {
+        width: 80px;
+    }
+
+    .home-hero-image-div {
+        display: none;
+    }
+
+    .home-aboutus-top {
+        flex-direction: column;
+        padding-top: 40px; /* Adjust padding for better spacing */
+    }
+
+    .home-aboutus-left, .home-aboutus-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-aboutus-bottom {
+        flex-direction: column;
+    }
+
+    .home-aboutus-bottom-left, .home-aboutus-bottom-right {
+        width: 100%;
+        padding: 0;
+    }
+    .home-hero-text-button2 
+    {
+        display: none;
+    }
+    .home-hero-text-buttons  {
+        justify-content:left;
+        align-items: start;
+    }
+}
+
 

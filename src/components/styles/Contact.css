@@ -2,30 +2,38 @@
     width: 100%;
     padding-bottom: 100px;
 }
+
 .contact-info-div {
     width: 100%;
     display: flex;
     padding-top: 100px;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.contact-address {
+
+.contact-address, 
+.contact-other {
     width: 20%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border: 1px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-
-    align-items: center;    
+    align-items: center;
     text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-.contact-address h3 {
+
+.contact-other {
+    margin-left: 20px;
+}
+
+.contact-address h3, 
+.contact-other h3 {
     margin-bottom: 10px;
 }
+
 .contact-hr {
     width: 90%;
     height: 1px;
@@ -33,26 +41,45 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.contact-other {
-    width: 20%;
-    border-radius: 10px;
-   
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    text-align: center;
-    margin-left: 20px;
-}
-.contact-map-icon {
-    width: 60px;
-    margin-bottom: 10px;
-    cursor: pointer;
 
-}
+.contact-map-icon, 
 .contact-mail-icon {
     width: 60px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
 
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .contact-address, 
+    .contact-other {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-address, 
+    .contact-other {
+        width: 40%;
+    }
+    .contact-other {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-address, 
+    .contact-other {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-address, 
+    .contact-other {
+        width: 90%;
+    }
+    .contact-info-div {
+        padding-top: 50px;
+    }
 }
