@@ -6,19 +6,19 @@
 }
 
 .dcc-content h2 {
-    font-size: 3rem; /* Original font size */
+    font-size: 3rem;  
     margin-bottom: 10px;
 }
 
 .dcc-content p {
-    font-size: 1rem; /* Original font size */
+    font-size: 1rem;  
     color: gray;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .dcc-content h3 {
-    font-size: 2rem; /* Original font size */
+    font-size: 2rem;  
     margin-bottom: 10px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .dcc-content li {
-    font-size: 1rem; /* Original font size */
+    font-size: 1rem;  
     color: gray;
     margin-bottom: 10px;
 }
@@ -38,9 +38,9 @@
 }
 
 .dcc-feature-cards {
-    padding: 50px 20px; /* Original padding for larger screens */
+    padding: 50px 20px;  
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     margin-bottom: 100px;
 }
@@ -61,72 +61,72 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design for smaller screens */
+ 
 @media screen and (max-width: 1200px) {
     .dcc-content {
-        padding: 80px 20px; /* Reduced padding for medium screens */
+        padding: 80px 20px;  
     }
 
     .dcc-content h2 {
-        font-size: 2.5rem; /* Adjusted font size for medium screens */
+        font-size: 2.5rem;  
     }
 
     .dcc-content h3 {
-        font-size: 1.8rem; /* Adjusted font size for medium screens */
+        font-size: 1.8rem;  
     }
 
     .dcc-content p,
     .dcc-content li {
-        font-size: 0.9rem; /* Adjusted font size for medium screens */
+        font-size: 0.9rem; 
     }
     
     .dcc-feature-cards {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+        grid-template-columns: repeat(3, 1fr);  
     }
 }
 
 @media screen and (max-width: 992px) {
     .dcc-content {
-        padding: 60px 15px; /* Reduced padding for smaller screens */
+        padding: 60px 15px; 
     }
 
     .dcc-content h2 {
-        font-size: 2rem; /* Further adjusted font size for smaller screens */
+        font-size: 2rem;  
     }
 
     .dcc-content h3 {
-        font-size: 1.6rem; /* Further adjusted font size for smaller screens */
+        font-size: 1.6rem;  
     }
 
     .dcc-content p,
     .dcc-content li {
-        font-size: 0.85rem; /* Further adjusted font size for smaller screens */
+        font-size: 0.85rem; 
     }
     
     .dcc-feature-cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media screen and (max-width: 768px) {
     .dcc-content {
-        padding: 40px 10px; /* Reduced padding for very small screens */
+        padding: 40px 10px; 
     }
 
     .dcc-content h2 {
-        font-size: 1.8rem; /* Adjusted font size for very small screens */
+        font-size: 1.8rem;  
     }
 
     .dcc-content h3 {
-        font-size: 1.4rem; /* Adjusted font size for very small screens */
+        font-size: 1.4rem;  
     }
 
     .dcc-content p,
     .dcc-content li {
-        font-size: 0.8rem; /* Adjusted font size for very small screens */
+        font-size: 0.8rem;  
     }
 
     .dcc-feature-cards {
-        grid-template-columns: 1fr; /* Single column for very small screens */
+        grid-template-columns: 1fr;
     }
 }

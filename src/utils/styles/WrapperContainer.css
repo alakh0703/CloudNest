@@ -1,7 +1,7 @@
 .wrapper-container-main {
-    width: 100vw; /* Adjusted to account for padding */
+    width: 100vw;  
     padding-left: 20%;
     padding-right: 20%;
-    box-sizing: border-box; /* Ensures padding is included in the total width */
-    margin: 0 auto; /* Centers the wrapper */
+    box-sizing: border-box;  
+    margin: 0 auto;  
 }

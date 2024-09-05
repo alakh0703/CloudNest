@@ -14,7 +14,7 @@
 
 .register-form {
     width: 90%;
-    max-width: 500px; /* Adjust the max width as needed */
+    max-width: 500px;  
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgb(38, 145, 221);
-    padding: 0 20px; /* Adjust padding */
+    padding: 0 20px; 
     height: 50px;
     border-radius: 25px;
     color: white;
@@ -80,8 +80,8 @@
 
     .register-button-div {
         width: 100%;
-        max-width: 100%; /* Full width on smaller screens */
-        padding: 0 10px; /* Adjust padding */
+        max-width: 100%; 
+        padding: 0 10px; 
     }
 
     .register-circle {

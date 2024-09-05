@@ -1,10 +1,13 @@
 import React from 'react'
 import CommonHeader from './CommonHeader'
 import './styles/DCC.css'
+import LoadingAnimation from '../utils/LoadingAnimation'
 
 const DCC = () => {
   return (
     <div>
+            <LoadingAnimation />
+
       <CommonHeader title="DC & Cloud" location="DC & Cloud"/>
       <div className='dcc-content'>
         <h2>Unleashing the Power of DC and Cloud Integration: A Digital Transformation Journey</h2>

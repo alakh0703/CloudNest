@@ -10,15 +10,18 @@ import ServiceIcon5 from "../assets/images/service-icon5.png";
 import ServiceIcon6 from "../assets/images/service-icon6.png";
 import ServiceIcon7 from "../assets/images/service-icon7.png";
 import ServiceIcon8 from "../assets/images/service-icon8.png";
+import LoadingAnimation from '../utils/LoadingAnimation';
 
 const AboutUs = () => {
   return (
     <div className='about-us'>
+            <LoadingAnimation />
+
       <CommonHeader title='About Us' location='About Us' />
       <div className='about-us-content'>
         <div className='about-us-content-header'>
           <h2>Meet Us</h2>
-          <p>Welcome to My cloud Space, where cutting-edge technology meets unparalleled reliability. As a leading force in the datacenter industry, we take pride in providing state-of-the-art solutions that empower businesses to thrive in the digital era.</p>
+          <p>Welcome to Cloud Nest, where cutting-edge technology meets unparalleled reliability. As a leading force in the datacenter industry, we take pride in providing state-of-the-art solutions that empower businesses to thrive in the digital era.</p>
           <img src={AboutUsImage} alt="About Us" className='about-us-content-image'/>
         </div>
         <div className='about-us-content-services'>
@@ -70,7 +73,7 @@ const AboutUs = () => {
       
         <div className='about-us-content-mission'>
           <h2>Our Mission</h2>
-          <p>At mycloudspace.live, our mission is to redefine the standards of data hosting and management. We believe that data is at the heart of every successful enterprise, and our goal is to offer secure, scalable, and efficient datacenter services that propel businesses forward.</p>
+          <p>At cloudnest, our mission is to redefine the standards of data hosting and management. We believe that data is at the heart of every successful enterprise, and our goal is to offer secure, scalable, and efficient datacenter services that propel businesses forward.</p>
             <h2>Who we are</h2>
             <p>Established in 2023, Shootsace digital private limited has emerged as a trusted partner for businesses seeking top-tier datacenter solutions. Our team of seasoned experts brings a wealth of experience in designing, implementing, and managing data infrastructure, ensuring our clients can focus on their core competencies while we handle the complexities of data management.</p>
         </div>

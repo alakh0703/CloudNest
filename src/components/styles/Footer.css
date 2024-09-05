@@ -19,7 +19,7 @@
     padding-left: 17%;
     padding-right: 20%;
     display: flex;
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .footer-content-left,
@@ -73,8 +73,7 @@
     margin-right: 10px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
     .footer-content {
         padding-left: 10%;
         padding-right: 10%;

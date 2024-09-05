@@ -17,7 +17,7 @@
 }
 
 .about-us-content-header h2 {
-    font-size: 2.5rem; /* Adjusted for smaller screens */
+    font-size: 2.5rem;  
     font-weight: 700;
     color: #333;
     margin-bottom: 20px;
@@ -25,14 +25,14 @@
 
 .about-us-content-header p {
     margin-bottom: 20px;
-    width: 80%; /* Make the text block responsive */
+    width: 80%; 
 }
 
 .about-us-content-header img {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Limit the image size on larger screens */
+    width: 100%;  
+    max-width: 600px; 
 }
 
 .about-us-content-mission {
@@ -55,13 +55,13 @@
 
 .about-us-content-mission p {
     margin-bottom: 50px;
-    width: 80%; /* Make the text block responsive */
+    width: 80%; 
 }
 
 .about-us-content-services {
     width: 100%;
     background: url("../../assets/images/service_bg.png");
-    background-size: cover; /* Ensure the background image scales responsively */
+    background-size: cover;  
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -72,7 +72,7 @@
 }
 
 .about-us-content-services h2 {
-    font-size: 2.5rem; /* Adjusted font size for responsiveness */
+    font-size: 2.5rem;  
     font-weight: 700;
     color: white;
     margin-bottom: 20px;
@@ -80,19 +80,19 @@
 
 .about-us-content-services .p1 {
     margin-bottom: 50px;
-    width: 80%; /* Adjust width for better readability on smaller screens */
+    width: 80%;  
 }
 
 .about-us-cards {
     display: grid;
-    width: 90%; /* Adjusted for smaller screens */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with auto-fitting columns */
-    gap: 20px; /* Add some spacing between cards */
+    width: 90%; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    gap: 20px; 
 }
 
 .about-us-card {
     background-color: transparent;
-    padding: 50px 20px; /* Adjusted padding for smaller screens */
+    padding: 50px 20px; 
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
@@ -105,7 +105,7 @@
 
 .about-us-card img {
     margin-bottom: 20px;
-    width: 60px; /* Ensure icons are responsive */
+    width: 60px;  
     height: 60px;
     object-fit: contain;
 }
@@ -120,7 +120,7 @@
     .about-us-content-header p,
     .about-us-content-mission p,
     .about-us-content-services .p1 {
-        width: 100%; /* Full width text on smaller screens */
+        width: 100%;  
     }
 
     .about-us-content-header img {
@@ -128,7 +128,7 @@
     }
 
     .about-us-card {
-        padding: 40px 10px; /* Adjust padding for mobile */
+        padding: 40px 10px; 
     }
 }
 
@@ -142,10 +142,10 @@
     .about-us-content-header p,
     .about-us-content-mission p,
     .about-us-content-services .p1 {
-        width: 100%; /* Full width text on smaller screens */
+        width: 100%;  
     }
 
     .about-us-card {
-        padding: 30px 10px; /* Adjust padding for mobile */
+        padding: 30px 10px; 
     }
 }

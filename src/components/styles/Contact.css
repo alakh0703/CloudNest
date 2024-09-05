@@ -49,8 +49,7 @@
     cursor: pointer;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
     .contact-address, 
     .contact-other {
         width: 30%;

@@ -1,20 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import WrapperContainer from './utils/WrapperContainer';
-import Home from './components/Home';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Register from './components/Register';
+import './App.css';
 import AboutUs from './components/AboutUs';
-import Login from './components/Login';
+import CloudInfra from './components/CloudInfra';
 import Contact from './components/Contact';
 import DCC from './components/DCC';
 import DataCenter from './components/DataCenter';
-import CloudInfra from './components/CloudInfra';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+import Register from './components/Register';
+import LoadingAnimation from "./utils/LoadingAnimation";
 
 
 
@@ -59,11 +58,9 @@ function App() {
   return (
     <div className='app'>
 <Navbar />
-    {/* <WrapperContainer> */}
-      <RouterProvider router={router} />
+       <RouterProvider router={router} />
 
-    {/* </WrapperContainer> */}
-    <Footer />
+     <Footer />
     </div>
 
   );

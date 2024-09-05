@@ -1,15 +1,18 @@
 import React from 'react'
 import CommonHeader from './CommonHeader';
 import "./styles/Login.css"
+import LoadingAnimation from '../utils/LoadingAnimation';
 
 const Login = () => {
   return (
     <div className='login-main'>
+            <LoadingAnimation/>
+
       <CommonHeader  title="Welcome back" location="Login"  />
       <div className='login-form-div'>
 <form className='login-form'>
-      <label className='login-label' htmlFor="MRN">MRN</label>
-      <input type='text' className='login-input' name='MRN' placeholder='MRN'/>
+      <label className='login-label' htmlFor="MRN">Username</label>
+      <input type='text' className='login-input' name='MRN' placeholder='XYZ'/>
       <label className='login-label' htmlFor="password">Password</label>
       <input type='password' className='login-input' name='password' placeholder='*********'/>
       <div className='login-other-options'>

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './styles/Home.css';
-import FixedNav from './FixedNav';
-import HeroImage from "../assets/images/HeroImage.png"
-import AboutUsImage from "../assets/images/AboutUs.png"
+import Feature1 from "../assets/images/feature1.png";
+import Feature2 from "../assets/images/feature2.png";
+import HeroImage from "../assets/images/HeroImage.png";
 import homebest1 from "../assets/images/homebest1.png";
 import homebest2 from "../assets/images/homebest2.png";
 import homebest3 from "../assets/images/homebest3.png";
@@ -11,8 +10,9 @@ import homebest5 from "../assets/images/homebest5.png";
 import homebest6 from "../assets/images/homebest6.png";
 import homebest7 from "../assets/images/homebest7.png";
 import homebest8 from "../assets/images/homebest8.png";
-import Feature1 from "../assets/images/feature1.png";
-import Feature2 from "../assets/images/feature2.png"
+import FixedNav from './FixedNav';
+import './styles/Home.css';
+import LoadingAnimation from '../utils/LoadingAnimation';
 const Home = () => {
   const rotatingText = ['your cloud','your website','your hosting'];
   const [displayText, setDisplayText] = useState('');
@@ -50,6 +50,8 @@ const Home = () => {
     <>
     <div className='home_main'>
       <FixedNav />
+      <LoadingAnimation />
+
         <div className='home-hero'>
           <div className='home-hero-text'>
             <p className='home-hero-text-p'>Hosting freedom <br/>
@@ -160,7 +162,7 @@ const Home = () => {
      </div>
      <div className='home-aboutus-bottom'>
       <div className='home-aboutus-bottom-left'>
-<h3>You're Our Priority 24x7 My cloud space services</h3> 
+<h3>You're Our Priority 24x7 Cloud Nest services</h3> 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sapiente iste illo deserunt vero maxime eveniet laboriosam ipsam placeat nulla.</p>       
 </div>
         <div className='home-aboutus-bottom-right'>

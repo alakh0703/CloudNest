@@ -1,10 +1,12 @@
 import React from 'react'
 import CommonHeader from './CommonHeader'
 import "./styles/Register.css"
+import LoadingAnimation from '../utils/LoadingAnimation'
 
 const Register = () => {
   return (
     <div  className='register-main'>
+      <LoadingAnimation />
 
       <CommonHeader title="Register your Account" location="Register"/>
       <div className='register-form-div'>

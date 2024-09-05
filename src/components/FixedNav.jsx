@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
+import Logo from "../assets/images/Logo.png";
+import MenuBar from './MenuBar';
 import './styles/FixedNav.css';
-import Logo from "../assets/images/Logo.png"
 
 const FixedNav = () => {
 
@@ -8,8 +9,8 @@ const FixedNav = () => {
     window.location.href = location;
   }
 
-  useEffect(() => { 
-  }, [])
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className='fixnav-main'>
         <div className='fixnav-logodiv'>
@@ -47,6 +48,17 @@ const FixedNav = () => {
 
           </div>
           </div>
+          <div className='fixnav-hamburger'>
+          <label for="check" className='hamburger-label'>
+      <input type="checkbox" id="check" checked={menuOpen} 
+              onChange={() => setMenuOpen(!menuOpen)}/> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+          </div>
+  {menuOpen &&        <MenuBar  setIsOpen={setMenuOpen} />}
           <div className='fixnav-button'>
             <button className='fixnav-button2'>REGISTER NOW</button>
             </div>

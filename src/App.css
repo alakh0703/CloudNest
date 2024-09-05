@@ -12,21 +12,20 @@ html {
   overflow-x: hidden;
 }
 
-/* Custom vertical scrollbar styles */
-::-webkit-scrollbar {
-  width: 10px; /* Width of the vertical scrollbar */
+ ::-webkit-scrollbar {
+  width: 10px;  
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the scrollbar track (background) */
+  background: #f1f1f1; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #bbd0ef; /* Color of the scroll thumb (the draggable part) */
-  border-radius: 10px; /* Rounded corners for the scroll thumb */
-  border: 2px solid transparent; /* Optional: create some padding around the thumb */
+  background-color: #bbd0ef;  
+  border-radius: 10px; 
+  border: 2px solid transparent; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color when the thumb is hovered */
+  background-color: #555;  
 }
